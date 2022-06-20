@@ -29,9 +29,9 @@ export default defineNuxtModule({
     },
   },
   async setup(moduleOptions, nuxt) {
-    const moduleContainer = await useModuleContainer(nuxt);
+    const moduleContainer = useModuleContainer(nuxt);
 
-    await moduleContainer.addLayout(
+    moduleContainer.addLayout(
       {
         filename: 'MarketLayout.vue',
         write: true,
