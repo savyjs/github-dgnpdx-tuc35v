@@ -33,9 +33,9 @@ export default defineNuxtModule({
 
     await moduleContainer.addLayout(
       {
-        filename: 'MarketLayout.vue',
+        filename: '/layouts/MarketLayout.vue',
         write: true,
-        src: await resolvePath(__dirname + '/layout/MarketLayout.vue'),
+        src: await resolvePath(__dirname + '/layouts/MarketLayout.vue'),
       },
       'market-layout'
     );
